@@ -1,0 +1,31 @@
+.leaflet-container {
+  height: 100%;
+}
+.map {
+  height: 51vh;
+}
+.info-flag {
+  img {
+    width: 80px;
+    height: auto;
+    margin-top: 0;
+    border-radius: 5px;
+  }
+}
+.info-container {
+  > div {
+    font-size: 14px;
+    color: #111;
+    margin-top: 5px;
+  }
+  .info-country{
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .info-recovered {
+    color: green;
+  }
+  .info-deaths {
+      color: red;
+  }
+}

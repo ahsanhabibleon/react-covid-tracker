@@ -1,0 +1,18 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    th,td {
+        text-align: left;
+        padding: 10px;
+        &:last-child {
+            text-align: right;
+        }
+    }
+    tr:nth-of-type(odd) {
+        background-color: #f6f5fa;
+    }
+}
+.table__wrapper {
+    height: 40vh;
+    overflow-x: hidden;
+}

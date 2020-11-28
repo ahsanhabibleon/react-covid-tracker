@@ -1,0 +1,14 @@
+.app_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 3rem;
+  .app__form-control {
+    min-width: 10rem;
+  }
+}
+.app__header__title {
+    h1 {
+        color: rgb(211, 60, 60);
+    }
+}

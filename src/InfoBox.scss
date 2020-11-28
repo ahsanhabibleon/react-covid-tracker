@@ -1,0 +1,56 @@
+.app__container {
+  h3 {
+    color: #333;
+  }
+  h5 {
+    font-size: 1rem;
+    color: #777;
+    span {
+      display: block;
+      font-size: 1.5rem;
+      color: red;
+      margin: 0 0 0.3rem;
+    }
+  }
+  .recovered {
+    h5 span {
+      color: green;
+    }
+  }
+  .MuiCard-root {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  .infoBox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 120.8px;
+    &__inner {
+      flex: 0 0 100%;
+      max-width: 100%;
+      cursor: pointer;
+    }
+    &::after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: #fff;
+      transition: all 0.5s;
+    }
+
+    &--active {
+      &::after {
+        background: red;
+      }
+      &.recovered {
+        &::after {
+          background: green;
+        }
+      }
+    }
+  }
+}
