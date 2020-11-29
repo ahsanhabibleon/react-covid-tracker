@@ -59,7 +59,6 @@ const App = () => {
       .then(res => res.json())
       .then(data => {
         setDataStorage(data)
-        console.log(data)
         setLoading(false)
       })
   }
